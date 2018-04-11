@@ -4,7 +4,7 @@
     <style>
 
       html {
-        font-family: 'Trebuchet MS';
+        font-family: 'Helvetica';
       }
 
       h1, div {
@@ -62,6 +62,9 @@
         let str = pic['user']['hd_profile_pic_url_info']['url']
         let img = document.querySelector('img');
         img.src = str;
+        img.onclick = function() {
+          window.location.href = str;
+        }
         // console.log(pic.user[]);
         console.log(pic['user']['hd_profile_pic_url_info']['url']);
 
